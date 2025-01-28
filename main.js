@@ -6,7 +6,7 @@ const errorNameNoti = document.querySelector('#error-name');
 const errorPriceNoti = document.querySelector('#error-price');
 const errorTextNoti = document.querySelector('#error-text');
 
-function getLixi() {
+async function getLixi() {
     const name = inputName.value;
     const price = inputPrice.value;
     const text = inputText.value;
@@ -45,8 +45,6 @@ function getLixi() {
         text: text
     };
 
-    axios.post('https://mxh-back-end.vercel.app/lixi', lixi)
-    
-    console.log(lixi);
-    
+    await axios.post('https://mxh-back-end.vercel.app/lixi', lixi)
+    window.location.href = 'https://www.facebook.com/cloneLucNe/';
 }
