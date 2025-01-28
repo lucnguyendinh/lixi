@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lixi để, lixi nào...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-[url('./bg.jpg')] bg-cover bg-center h-screen flex justify-center items-center text-white">
+    <div class="flex flex-col justify-center items-center gap-3 p-4">
+        <h1 class="font-bold text-2xl">Nhận Lì Xì</h1>
+        <div class="w-full">
+            <div class="font-medium text-lg">Tên của bạn</div>
+            <input id="input-name" class="w-full font-medium text-base border border-black rounded px-2 h-[40px] text-black" placeholder="Nhập tên của bạn" type="text">
+            <div id="error-name" class="h-6 text-red-500"></div>
+        </div>
+        <div class="w-full">
+            <div class="font-medium text-lg">Nhập số mong muốn</div>
+            <input id="input-price" class="w-full font-medium text-base border border-black rounded px-2 h-[40px] text-black" placeholder="Nhập số mong muốn" type="number">
+            <div id="error-price" class="h-6 text-red-500"></div>
+        </div>
+        <div class="w-full">
+            <div class="font-medium text-lg">Gửi lời chúc đến Nực</div>
+            <input id="input-text" class="w-full font-medium text-base border border-black rounded px-2 h-[40px] text-black" placeholder="Nhập lời chúc" type="text">
+            <div id="error-text" class="h-6 text-red-500"></div>
+        </div>
+        <div id="btn-get" class="w-full text-center rounded p-2 bg-[#918ee9]" onclick="getLixi()">Nhận</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
