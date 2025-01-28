@@ -22,7 +22,7 @@ function getLixi() {
         errorPrice = 'Vui lòng nhập số tiền';
     } else if(+price > 50000) {
         errorPrice = 'Số tiền không được lớn hơn 50.000';
-    } else if(+price <= 50000) {
+    } else if(+price <= 50000 && +price >= 0) {
         errorPrice = 'Vui lòng nhập số âm';
     }
     if(text.length === 0) {
