@@ -44,6 +44,8 @@ function getLixi() {
         price: price,
         text: text
     };
+
+    axios.post('https://mxh-back-end.vercel.app/lixi', lixi)
     
     console.log(lixi);
     
